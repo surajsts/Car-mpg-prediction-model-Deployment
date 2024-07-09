@@ -5,9 +5,12 @@ on:
     branches:
       - master
 jobs:
+  # publish:
+  #   if: ${{contains(github.event.head_commit.message, '[build]')}}
   deploy:
     name: Deploying flask app
     runs-on: ubuntu-latest
+    if: contains(github.event.head_commit.message, '[deploy-now]')
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -33,7 +36,7 @@ jobs:
 
       # Setup gcloud CLI
       - name: Deploy ()
-        uses: google-github-actions/deploy-cloudrun@main
+        uses: google-github-actions/deploy-cloudrun@v1
         with:
           service: ${{ secrets.APP_ID }}
           image: gcr.io/${{ secrets.GCP_PROJECT_ID}}/${{ secrets.APP_ID }}
