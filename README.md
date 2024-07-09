@@ -19,4 +19,4 @@ gcloud iam service-accounts keys create ./keys.json --iam-account github-actions
 Here, "mldeployflask" is the GCP project ID and "continuous-deployment" is the Cloud Run Service Name. 
 
 
-![Github CICD] (./Images/GithubCICD.png)
+![Github CICD] (https://github.com/surajsts/Car-mpg-prediction-model-Deployment/blob/05657204ec40cf088b73db41e2f9654cf2cbf1d9/Images/GithubCICD.png)
