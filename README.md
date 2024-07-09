@@ -23,7 +23,7 @@ and the core MLOps life cycle concepts (excluding monitoring and retraining) tha
 - Artifact Registry <br>
 - Cloud Storage (Buckets) <br>
 
-<h3> gcloud commands used: </h3>
+<!-- <h3> gcloud commands used: </h3>
 
 1)<h4>  gcloud builds submit --tag gcr.io/mldeployflask/continuous-deployment --project=mldeployflask <h4> <br>
 
@@ -37,7 +37,36 @@ and the core MLOps life cycle concepts (excluding monitoring and retraining) tha
 
   (To create key for the chosen google cloud service account, which will be used for Github CI/CD pipeline purposes)
 
-Here, <strong>mldeployflask</strong> is the GCP project ID and <strong>continuous-deployment</strong> is the Cloud Run Service Name. 
+Here, <strong>mldeployflask</strong> is the GCP project ID and <strong>continuous-deployment</strong> is the Cloud Run Service Name.  -->
+
+<h3>GCloud Commands Used:</h3>
+
+<ul>
+  <li>
+    <strong>Submit Build to Google Container Registry:</strong>
+    <pre><code>gcloud builds submit --tag gcr.io/mldeployflask/continuous-deployment --project=mldeployflask</code></pre>
+  </li>
+
+  <li>
+    <strong>Deploy to Google Cloud Run:</strong>
+    <pre><code>gcloud run deploy continuous-deployment --image gcr.io/mldeployflask/continuous-deployment --platform managed --project=mldeployflask --allow-unauthenticated --region us-east1</code></pre>
+  </li>
+
+  <li>
+    <strong>List Service Accounts:</strong>
+    <pre><code>gcloud iam service-accounts list --project=mldeployflask</code></pre>
+    <p>(To view the service accounts associated with the project)</p>
+  </li>
+
+  <li>
+    <strong>Create Service Account Key:</strong>
+    <pre><code>gcloud iam service-accounts keys create ./keys.json --iam-account github-actions@mldeployflask.iam.gserviceaccount.com</code></pre>
+    <p>(To create a key for the chosen Google Cloud service account, which will be used for GitHub CI/CD pipeline purposes)</p>
+  </li>
+</ul>
+
+<p>Here, <strong>mldeployflask</strong> is the GCP project ID and <strong>continuous-deployment</strong> is the Cloud Run Service Name.</p>
+
 
 
 
@@ -46,6 +75,7 @@ Here, <strong>mldeployflask</strong> is the GCP project ID and <strong>continuou
 
 
 ![Github CICD](https://github.com/surajsts/Car-mpg-prediction-model-Deployment/blob/05657204ec40cf088b73db41e2f9654cf2cbf1d9/Images/GithubCICD.png)
+
 
 
 
@@ -60,6 +90,7 @@ Conditional deployment of the ML model is ensured to prevent the deployment of t
 
 
 
+
 <h2> Google Cloud Run Service: </h2>
 
 
@@ -68,6 +99,7 @@ The <strong>"continuous-deployment-cicd" </strong> is the cloud run service, aft
 
 
 ![Cloud Run](https://github.com/surajsts/Car-mpg-prediction-model-Deployment/blob/8ac8ff0369fd51d0c2aa8f6e3c3ae563268aa3d1/Images/CloudRunService.png)
+
 
 
 
