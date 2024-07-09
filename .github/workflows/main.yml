@@ -12,6 +12,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: 'Google auth'
+        id: 'auth'
+        uses: 'google-github-actions/auth@v1'
+        with:
+          credentials_json : ${{ secrets.GCP_SA_KEY_JSON }}
       # Build and push image to Google Container Registry
       - name: Setting up
         uses: google-github-actions/setup-gcloud@v1
