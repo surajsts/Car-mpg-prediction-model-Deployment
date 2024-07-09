@@ -3,7 +3,7 @@ name: Deploy using Google Cloud Run ()
 on:
   push:
     branches:
-      - main
+      - master
 jobs:
   deploy:
     name: Deploying flask app
