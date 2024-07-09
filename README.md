@@ -2,7 +2,7 @@
 
 <h3> Project Objective:</h3>
 
-<img align="right" alt="Coding" width="400" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.datacamp.com%2Fblog%2Fmachine-learning-lifecycle-explained&psig=AOvVaw0_CWwlMY-HwDg8YLAmlqKr&ust=1720623282355000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLCR8a2bmocDFQAAAAAdAAAAABAQ">
+<img align="right" alt="Coding" width="400" src="https://github.com/surajsts/Car-mpg-prediction-model-Deployment/blob/bd191274d3a9650e6af6d50f297838c80bb2e419/Images/mlops.png">
 
 The project aims to focus on Unsupervised Learning approach to increase the model efficiency <br>
 and the core MLOps life cycle concepts (excluding monitoring and retraining concepts) which includes: <br>
