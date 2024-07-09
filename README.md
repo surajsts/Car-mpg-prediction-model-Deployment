@@ -57,5 +57,5 @@ The "continuous-deployment-cicd" is the cloud run service, after the successful 
 
 ![Cloud Run](https://github.com/surajsts/Car-mpg-prediction-model-Deployment/blob/8ac8ff0369fd51d0c2aa8f6e3c3ae563268aa3d1/Images/CloudRunService.png)
 
-<h4> Github CI/CD pipeline: </h4>
+<h4> Deployed Model: </h4>
 
