@@ -17,11 +17,12 @@ jobs:
         uses: 'google-github-actions/auth@v1'
         with:
           credentials_json : ${{ secrets.GCP_SA_KEY_JSON }}
+
       # Build and push image to Google Container Registry
       - name: Setting up
         uses: google-github-actions/setup-gcloud@v1
         with:
-          version: '286.0.0'
+          version: '383.0.1'
           service_account_key: ${{ secrets.GCP_SA_KEY_JSON }}
           # service_account_email: "github-actions@mldeployflask.iam.gserviceaccount.com"
           project_id: ${{ secrets.GCP_PROJECT_ID}}
