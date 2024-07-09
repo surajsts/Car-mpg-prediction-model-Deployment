@@ -16,4 +16,6 @@ gcloud iam service-accounts list --project=mldeployflask
 gcloud iam service-accounts keys create ./keys.json --iam-account github-actions@mldeployflask.iam.gserviceaccount.com
 (To create key for the chosen google cloud service account, which will be used for Github CI/CD pipeline purposes)
 
-Here, "mldeployflask" is the GCP project ID and "continuous-deployment" is the Cloud Run Service Name.  
+Here, "mldeployflask" is the GCP project ID and "continuous-deployment" is the Cloud Run Service Name. 
+
+Sample
