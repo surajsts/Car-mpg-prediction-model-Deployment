@@ -4,9 +4,10 @@
 
 <img align="right" alt="Coding" width="400" src="https://github.com/surajsts/Car-mpg-prediction-model-Deployment/blob/bd191274d3a9650e6af6d50f297838c80bb2e419/Images/mlops.png">
 
+<p>
 The project aims to focus on Unsupervised Learning approach to increase the model efficiency <br>
 and the core MLOps life cycle concepts (excluding monitoring and retraining) that includes: <br>
-
+</p>
 - Data Preprocessing<br>
 - Model Training <br>
 - Model Validation<br>
@@ -15,7 +16,8 @@ and the core MLOps life cycle concepts (excluding monitoring and retraining) tha
 - Model Deployment using Google Artifact Registry for saving the Docker images <br>
   and Google Cloud Run to deploy the dockerized model.<br>
 
-<h4> Unsupervised Learning algorithms like K-Means and DBSCAN clustering is performed and interesting relationships between the features (miles per gallon (mpg), weight of car, Horse power) is found. Regression model is trained using original dataset along with the feature labels obtained from the Unsupervised learning models and comparison of various models is done. Finally the best model is saved for the deployment purposes.</h4>
+<p>
+<h4> Unsupervised Learning algorithms like K-Means and DBSCAN clustering is performed and interesting relationships between the features (miles per gallon (mpg), weight of car, Horse power) is found. Regression model is trained using original dataset along with the feature labels obtained from the Unsupervised learning models and comparison of various models is done. Finally the best model is saved for the deployment purposes.</h4> </p>
 
 <h2> Google Cloud Services used:</h2>
 
