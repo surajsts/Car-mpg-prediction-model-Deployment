@@ -17,7 +17,9 @@ and the core MLOps life cycle concepts (excluding monitoring and retraining) tha
   and Google Cloud Run to deploy the dockerized model.<br>
 
 <p>
-<h4> Unsupervised Learning algorithms like K-Means and DBSCAN clustering is performed and interesting relationships between the features (miles per gallon (mpg), weight of car, Horse power) is found. Regression model is trained using original dataset along with the feature labels obtained from the Unsupervised learning models and comparison of various models is done. Finally the best model is saved for the deployment purposes.</h4> </p>
+<h4> Unsupervised Learning algorithms like K-Means and DBSCAN clustering is performed and interesting relationships between the features (miles per gallon (mpg), weight of car, Horse power) is found. Regression model is trained using original dataset along with the feature labels obtained from the Unsupervised learning models and comparison of various models is done. Finally the best model is saved for the deployment purposes.</h4> 
+
+Dataset is taken from Kaggle.<br> Link : https://www.kaggle.com/datasets/uciml/autompg-dataset</p>
 
 <h2> Google Cloud Services used:</h2>
 
